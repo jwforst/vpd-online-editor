@@ -1,0 +1,707 @@
+<h1>This is h1 text</h1>
+<p>
+  This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+  elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+  deleniti asperiores dicta adipisci accusantium consequuntur optio
+  labore consectetur.
+</p>
+<h2>This is h2 text</h2>
+<p>
+  This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+  elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+  deleniti asperiores dicta adipisci accusantium consequuntur optio
+  labore consectetur.
+</p>
+<h3>This is h3 text</h3>
+<p>
+  This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+  elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+  deleniti asperiores dicta adipisci accusantium consequuntur optio
+  labore consectetur.
+</p>
+<h4>This is h4 text</h4>
+<p>
+  This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+  elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+  deleniti asperiores dicta adipisci accusantium consequuntur optio
+  labore consectetur.
+</p>
+<h5>This is h5 text</h5>
+<p>
+  This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+  elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+  deleniti asperiores dicta adipisci accusantium consequuntur optio
+  labore consectetur.
+</p>
+<h6>This is h6 text</h6>
+<p>
+  This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+  elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+  deleniti asperiores dicta adipisci accusantium consequuntur optio
+  labore consectetur.
+</p>
+<h1>Monospace Font</h1>
+<p class="code">
+  This is code text. Lorem ipsum dolor sit amet consectetur adipisicing
+  elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+  deleniti asperiores dicta adipisci accusantium consequuntur optio
+  labore consectetur.
+</p>
+<h1>Character Formats</h1>
+<p>
+  This is p text showing character formats. Emphasis: <em>This is
+    emphasis</em>. Bold: <strong>This is Strong</strong>. Marked:
+  <mark>This is is marked text</mark>.
+</p>
+
+
+
+<!-- ===== ===== active theme colors ===== ===== -->
+<h1>Active Theme Colors </h1>
+<p>See theme.css for full the definitions of color themes and font
+  families</p>
+<p>
+  The primary theme background colors consist of three user-selected
+  colors assigned to custom properties --color-surface01,
+  --color-surface02, and --color-surface03. These colors are shown here:
+</p>
+<div class="theme-display-row">
+  <div class="color-chip bg-color-surface01">
+    <p class="text-s01">surface01</p>
+  </div>
+  <div class="color-chip bg-color-surface02">
+    <p class="text-s02">surface02</p>
+  </div>
+  <div class="color-chip bg-color-surface03">
+    <p class="text-s03">surface03</p>
+  </div>s
+</div>
+<p>
+  The secondary theme background accent colors are assigned to custom
+  properties --color-accent01, --color-accent02, and --color-accent03.
+  These colors are shown here:
+</p>
+<div class="theme-display-row">
+  <div class="color-chip bg-color-accent01">
+    <p class="text-a01">accent01</p>
+  </div>
+  <div class="color-chip bg-color-accent02">
+    <p class="text-a02">accent02</p>
+  </div>
+  <div class="color-chip bg-color-accent03">
+    <p class="text-a03">accent03</p>
+  </div>
+</div>
+<!-- ===== ===== theme color assignments ===== ===== -->
+<h2>Assignment of Theme Colors to HTML Elements</h6>
+  <p>
+    The theme accent colors --color-surface01, --color-surface02, and
+    --color-surface03 are applied to these semantic HTML tags as shown
+    here:
+  </p>
+  <div class="theme-display-row">
+    <div class="color-chip bg-color-surface01">
+      <p class="text-s01">&lt;header&gt;</p>
+    </div>
+    <div class="color-chip bg-color-surface01">
+      <p class="text-s01">&lt;footer&gt;</p>
+    </div>
+    <div class="color-chip bg-color-surface02">
+      <p class="text-s02">&lt;nav&gt;</p>
+    </div>
+    <div class="color-chip bg-color-surface02">
+      <p class="text-s02">&lt;section&gt;</p>
+    </div>
+    <div class="color-chip bg-color-surface02">
+      <p class="text-s02">&lt;aside&gt;</p>
+    </div>
+    <div class="color-chip bg-color-surface03">
+      <p class="text-s03">&lt;article&gt;</p>
+    </div>
+    <div class="color-chip bg-color-surface03">
+      <p class="text-s03">&lt;main&gt;</p>
+    </div>
+  </div>
+  <!--===== ===== surface colors with associated text colors ===== =====-->
+  <h2>
+    CSS Custom Property Heading and Text Color Assignments
+  </h2>
+  <p>
+    These color chips show how theme-compatible text and heading h1
+    through h6 colors appear against the background surface colors and
+    accent colors.
+  </p>
+  <div class="theme-display-row">
+
+    <!-- Heading and Text Color-to-Backgound Assignments-->
+
+    <!-- color chip pair group -->
+    <div class="color-chip-pair bg-color-surface03">
+      <!-- surface01 background setup -->
+      <div class="color-chip bg-color-surface01">
+        <p class="text-s01">--color-surface01</p>
+      </div>
+      <div class="color-chip bg-color-surface01">
+        <p class="text-s01">--color-text-s01</p>
+        <p class="heading-s01">--color-h1-h6-s01</p>
+      </div>
+    </div>
+
+    <!-- color chip pair group -->
+    <div class="color-chip-pair bg-color-surface03">
+      <!-- surface02 background setup -->
+      <div class="color-chip bg-color-surface02">
+        <p class="text-s02">--color-surface02</p>
+      </div>
+      <div class="color-chip bg-color-surface02">
+        <p class="text-s02">--color-text-s02</p>
+        <p class="heading-s02">--color-h1-h6-s02</p>
+      </div>
+    </div>
+
+    <!-- color chip pair group -->
+    <div class="color-chip-pair bg-color-surface03">
+      <!-- surface03 background setup -->
+      <div class="color-chip bg-color-surface03">
+        <p class="text-s03">--color-surface03</p>
+      </div>
+      <div class="color-chip bg-color-surface03">
+        <p class="text-s03">--color-text-s03</p>
+        <p class="heading-s03">--color-h1-h6-s03</p>
+      </div>
+    </div>
+
+    <!-- color chip pair group -->
+    <div class="color-chip-pair bg-color-surface03">
+      <!-- accent01 background setup -->
+      <div class="color-chip bg-color-accent01">
+        <p class="text-a01">--color-accent01</p>
+      </div>
+      <div class="color-chip bg-color-accent01">
+        <p class="text-a01">--color-text-a01</p>
+        <p class="heading-a01">--color-h1-h6-a01</p>
+      </div>
+    </div>
+
+    <!-- color chip pair group -->
+    <div class="color-chip-pair bg-color-surface03">
+      <!-- accent02 background setup -->
+      <div class="color-chip bg-color-accent02">
+        <p class="text-a02">--color-accent02</p>
+      </div>
+      <div class="color-chip bg-color-accent02">
+        <p class="text-a02">--color-text-a02</p>
+        <p class="heading-a02">--color-h1-h6-a02</p>
+      </div>
+    </div>
+
+    <!-- color chip pair group -->
+    <div class="color-chip-pair bg-color-surface03">
+      <!-- accent03 background setup -->
+      <div class="color-chip bg-color-accent03">
+        <p class="text-a03">--color-accent03</p>
+      </div>
+      <div class="color-chip bg-color-accent03">
+        <p class="text-a03">--color-text-a03</p>
+        <p class="heading-a03">--color-h1-h6-a03</p>
+      </div>
+    </div>
+  </div>
+  <!-- ===== ===== grayscale colors ===== ===== -->
+  <h1>Grayscale Colors</h1>
+
+  <div class="theme-display-row">
+    <div class="color-chip bg-blk">
+      <p class="text-white">black</p>
+    </div>
+    <div class="color-chip bg-gray-10">
+      <p class="text-white">gray10</p>
+    </div>
+    <div class="color-chip bg-gray-20">
+      <p class="text-white">gray20</p>
+    </div>
+    <div class="color-chip bg-gray-30">
+      <p class="text-white">gray30</p>
+    </div>
+    <div class="color-chip bg-gray-40">
+      <p class="text-white">gray40</p>
+    </div>
+    <div class="color-chip bg-gray-50">
+      <p class="text-white">gray50</p>
+    </div>
+    <div class="color-chip bg-gray-60">
+      <p class="text-black">gray60</p>
+    </div>
+    <div class="color-chip bg-gray-70">
+      <p class="text-black">gray70</p>
+    </div>
+    <div class="color-chip bg-gray-80">
+      <p class="text-black">gray80</p>
+    </div>
+    <div class="color-chip bg-gray-90">
+      <p class="text-black">gray90</p>
+    </div>
+    <div class="color-chip bg-wht">
+      <p class="text-black">white</p>
+    </div>
+  </div>
+  <!-- ===== end grayscale colors ===== -->
+
+  <h1>Introduction</h1>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+    amet sed totam animi ipsa dolorum illum voluptas repudiandae iure
+    voluptate?
+  </p>
+
+  <figcaption>This is a figure caption (element = figcaption). Lorem
+    ipsum
+    dolor sit amet consectetur adipisicing elit illum voluptas
+    repudiandae
+    iure.
+  </figcaption>
+  <figure>
+    <img src="assets\Figure3.png" alt="figure 1" />
+  </figure>
+
+  <figcaption>This is a figure caption (element = figcaption). Lorem
+    ipsum
+    dolor sit amet consectetur adipisicing elit illum voluptas
+    repudiandae
+    iure.
+  </figcaption>
+  <figure>
+    <img src="assets\Figure1.png" alt="figure 1" />
+  </figure>
+
+  <h1>Details Element</h1>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error.
+  </p>
+  <details>
+    <summary>
+      This is a detail element
+    </summary>
+    <p>
+      This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+      deleniti asperiores dicta adipisci accusantium consequuntur optio
+      labore consectetur.
+    </p>
+  </details>
+
+
+  <h1>Organization</h1>
+
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+  <p>
+    12345678901234567890123456789012345678901234567890123456789012345
+  </p>
+
+  <h1>This is h1 text</h1>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+  <h2>This is h2 text</h2>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+  <h3>This is h3 text</h3>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+  <h4>This is h4 text</h4>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+  <h5>This is h5 text</h5>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+  <h6>This is h6 text</h6>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+  <h2>Setup KCU105 Board</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+    amet sed totam animi ipsa dolorum illum voluptas repudiandae iure
+    voluptate?
+  </p>
+
+  <figcaption>This is a figure caption (element = figcaption). Lorem
+    ipsum
+    dolor sit amet consectetur adipisicing elit illum voluptas
+    repudiandae
+    iure.
+  </figcaption>
+  <figure>
+    <img src="assets\Figure1.png" alt="figure 1" />
+  </figure>
+
+  <figcaption>This is a figure caption (element = figcaption). Lorem
+    ipsum
+    dolor sit amet consectetur adipisicing elit illum voluptas
+    repudiandae
+    iure.
+  </figcaption>
+  <figure class="borderless">
+    <img src="assets\Figure1.png" alt="figure 1" />
+  </figure>
+
+  <h2>Download Design Files</h2>
+  <p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
+    amet sed totam animi ipsa dolorum illum voluptas repudiandae iure
+    voluptate?
+  </p>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+  <dt>This is dt (definition term).</dt>
+  <dd>
+    This is dd (definition data). Lorem ipsum dolor sit amet,
+    consectetur
+    adipisicing elit. Repellendus itaque a, commodi, praesentium veniam
+    possimus earum adipisci unde ut quaerat pariatur assumenda, enim
+    quasi
+    fugit.
+  </dd>
+  <dt>This is dt (definition term).</dt>
+  <dd>
+    This is dd (definition data). Lorem ipsum dolor sit amet,
+    consectetur
+    adipisicing elit. Repellendus itaque a, commodi, praesentium veniam
+    possimus earum adipisci unde ut quaerat pariatur assumenda, enim
+    quasi
+    fugit.
+  </dd>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit. Voluptas maxime architecto dolore ad tempora error, cumque,
+    deleniti asperiores dicta adipisci accusantium consequuntur optio
+    labore consectetur.
+  </p>
+
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+  <p>
+    This is p text. Lorem ipsum <strong>This is strong</strong> dolor
+    <em>This is emphasis</em> sit amet consectetur adipisicing elit.
+    Voluptas maxime architecto dolore ad tempora error, cumque, deleniti
+    asperiores dicta adipisci accusantium consequuntur optio labore
+    consectetur.
+  </p>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+  <ol class="l1">
+    <li class="l1">
+      This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. voluptas maxime architecto dolore ad tempora error.
+    </li>
+    <li class="l1">
+      This is li1 text. Lorem ipsum dolor sit amet
+    </li>
+    <ol class="l2">
+      <li class="l2">
+        This is p text. Lorem ipsum dolor sit amet consectetur
+        adipisicing
+        elit. voluptas maxime architecto dolore ad tempora error.
+      </li>
+      <li class="l2">
+        This is li2 text. Lorem ipsum dolor sit amet
+      </li>
+      <ol class="l3">
+        <li class="l3">
+          This is p text. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. voluptas maxime architecto dolore ad tempora
+          error.
+        </li>
+        <li class="l3">
+          This is li3 text. Lorem ipsum dolor sit amet
+        </li>
+        <li class="l3">
+          This is li3 text. Lorem ipsum dolor sit amet
+        </li>
+      </ol>
+      <li class="l2">
+        This is li2 text. Lorem ipsum dolor sit amet
+      </li>
+    </ol>
+    <li class="l1">
+      This is li1 text. Lorem ipsum dolor sit amet
+    </li>
+  </ol>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+  <ul class="l1">
+    <li class="l1">
+      This is li1 text. Lorem ipsum dolor sit amet
+    </li>
+    <ul class="l2">
+      <li class="l2">
+        This is li2 text. Lorem ipsum dolor sit amet
+      </li>
+      <ul class="l3">
+        <li class="l3">
+          This is li3 text. Lorem ipsum dolor sit amet
+        </li>
+        <li class="l3">
+          This is li3 text. Lorem ipsum dolor sit amet
+        </li>
+      </ul>
+      <li class="l2">
+        This is li2 text. Lorem ipsum dolor sit amet
+      </li>
+    </ul>
+    <li class="l1">
+      This is li1 text. Lorem ipsum dolor sit amet
+    </li>
+  </ul>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+  <ul class="l1">
+    <li class="l1">
+      This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. voluptas maxime architecto dolore ad tempora error.
+    </li>
+    <ul class="l2">
+      <li class="l2">
+        This is p text. Lorem ipsum dolor sit amet consectetur
+        adipisicing
+        elit. voluptas maxime architecto dolore ad tempora error.
+      </li>
+      <ul class="l3">
+        <li class="l3">
+          This is p text. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. voluptas maxime architecto dolore ad tempora
+          error.
+        </li>
+      </ul>
+      <li class="l2">
+        This is p text. Lorem ipsum dolor sit amet consectetur
+        adipisicing
+        elit. voluptas maxime architecto dolore ad tempora error.
+      </li>
+    </ul>
+    <li class="l1">
+      This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+      elit. voluptas maxime architecto dolore ad tempora error.
+    </li>
+  </ul>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+  <h2>Tables</h2>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+  <!-- Responsive table example -->
+  <h3>Basic Table</h3>
+  <div class="responsive">
+    <table>
+      <caption>
+        This is a table caption (element = caption). Lorem ipsum dolor sit
+        amet consectetur adipisicing elit illum voluptas repudiandae iure.
+        elit
+      </caption>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Part Number</th>
+          <th>Supplier</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Spacer, aluminum</td>
+          <td>1209-01</td>
+          <td>Brigman</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Wafer, polyester</td>
+          <td>70091290</td>
+          <td>Kinney plastics</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mesh, brass</td>
+          <td>BR12-0749</td>
+          <td>Technical Alloys</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+
+
+  <!-- Scroll-bar Table example -->
+  <h3>Basic Table</h3>
+  <div class="responsive">
+    <table>
+
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Description</th>
+          <th>Part Number</th>
+          <th>Supplier</th>
+          <th>Quantity</th>
+        </tr>
+      </thead>
+
+      <tbody class="scroll">
+        <tr>
+          <td>1</td>
+          <td>Spacer, aluminum</td>
+          <td>1209-01</td>
+          <td>Brigman</td>
+          <td>13</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Wafer, polyester</td>
+          <td>70091290</td>
+          <td>Kinney plastics</td>
+          <td>15</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mesh, brass</td>
+          <td>BR12-0749</td>
+          <td>Technical Alloys</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mesh, brass</td>
+          <td>BR12-0749</td>
+          <td>Technical Alloys</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mesh, brass</td>
+          <td>BR12-0749</td>
+          <td>Technical Alloys</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mesh, brass</td>
+          <td>BR12-0749</td>
+          <td>Technical Alloys</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mesh, brass</td>
+          <td>BR12-0749</td>
+          <td>Technical Alloys</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mesh, brass</td>
+          <td>BR12-0749</td>
+          <td>Technical Alloys</td>
+          <td>12</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Mesh, brass</td>
+          <td>BR12-0749</td>
+          <td>Technical Alloys</td>
+          <td>12</td>
+        </tr>
+      </tbody>
+
+    </table>
+  </div>
+  <p>
+    This is p text. Lorem ipsum dolor sit amet consectetur adipisicing
+    elit:
+  </p>
+  </article>

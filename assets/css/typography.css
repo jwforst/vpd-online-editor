@@ -1,0 +1,244 @@
+
+
+/* ===== ===== ===== Headings ===== ===== =====*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font-family);
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: bold;
+  text-align: left;
+  line-height: 110%;
+  margin: 0rem;
+  padding: 0rem;
+  color: var(--main-h1-h6);
+}
+
+/* h1 {
+  font-size: 1.4rem;
+  margin: 2rem 0rem 0.75rem 0rem;
+}
+
+h1.title {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 2rem 0rem 3rem 0rem;
+}
+
+h2 {
+  font-size: 1.171rem;
+  margin: 2rem 0rem 0.75rem 0.5rem;
+}
+
+h3 {
+  font-size: 1.065rem;
+  margin: 2rem 0rem 0.75rem 1rem;
+  }
+
+h4 {
+  font-size: 0.968rem;
+  margin: 2rem 0rem 0.75rem 1.5rem;
+}
+
+h5 {
+  font-size: 0.880rem;
+  margin: 2rem 0rem 0.75rem 2rem;
+}
+
+h6 {
+  font-size: 0.800rem;
+  margin: 2rem 0rem 0.75rem 2.5rem;
+} */
+
+h1 {
+  font-size: 2rem;
+  margin: 2rem 0rem 0.75rem 0rem;
+}
+
+h1.title {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem 0rem 3rem 0rem;
+}
+
+h2 {
+  font-size: 1.7818rem;
+  margin: 2rem 0rem 0.75rem 0.5rem;
+}
+
+h3 {
+  font-size: 1.5874rem;
+  margin: 2rem 0rem 0.75rem 1rem;
+}
+
+h4 {
+  font-size: 1.4142rem;
+  margin: 2rem 0rem 0.75rem 1.5rem;
+}
+
+h5 {
+  font-size: 1.2599rem;
+  margin: 2rem 0rem 0.75rem 2rem;
+}
+
+h6 {
+  font-size: 1.1225rem;
+  margin: 2rem 0rem 0.75rem 2.5rem;
+}
+
+/*  ===== ===== ===== Body Text  ===== ===== ===== */
+caption,
+dd,
+dt,
+figcaption,
+label,
+legend,
+li,
+ol,
+p,
+summary,
+th,
+td,
+ul {
+  font-family: var(--paragraph-font-family);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  line-height: 115%;
+  word-break: normal;
+  margin: 0rem;
+  padding: 0rem;
+  color: var(--main-text);
+}
+
+/* ===== ===== ===== p ===== ===== ===== */
+p {
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  color: var(--color-text-b03);
+}
+
+/* ===== ===== ===== code ===== ===== ===== */
+
+code {
+  font-family: var(--mono-font-family);
+
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+  line-height: 115%;
+  word-break: normal;
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  color: var(--color-text-b03);
+}
+
+/* ===== ===== ===== caption ===== ===== ===== */
+/* See layout.css "table fonts" for caption */
+
+/* ===== ===== ===== dd and dt ===== ===== ===== */
+dd {
+  margin: 0.25rem 0.5rem 0.75rem 3.5rem;
+}
+
+dt {
+  font-size: 0.95rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 1rem 0.5rem 0rem 2.5rem;
+  padding: 0rem;
+}
+
+dd.doc-info {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0rem 0.5rem 0.5rem 1rem;
+  padding: 0rem 0rem 0rem 0rem;
+  color: var(--color-text-b02);
+}
+
+dt.doc-info {
+  font-size: 1rem;
+  font-weight: normal;
+  font-style: italic;
+  margin: 0.5rem 0.5rem 0rem 0.25rem;
+  padding: 0rem 0rem 0rem 0rem;
+  color: var(--color-text-b02);
+}
+
+/* ===== ===== ===== label ===== ===== ===== */
+label {
+  margin: 0rem 0rem 0rem 0rem;
+}
+
+/* ===== ===== ===== links ===== ===== ===== */
+/*  link */
+a:link {
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  color: var(--color-text-b03);
+}
+
+/* mouse over link */
+a:hover {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  color: var(--color-text-b03);
+}
+
+/* selected link */
+a:active {
+  font-weight: bold;
+  font-style: italic;
+  text-decoration: none;
+  color: var(--color-text-b03);
+} 
+
+/* ol, ul and li*/
+
+ol {
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+ul {
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+li {
+  margin: 0rem 0rem 0.25rem 1.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+
+/* summary */
+summary {
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+}
+details > p {
+  margin: 0.25rem 0rem 0.75rem 2.5rem;
+  padding: 0rem 0rem 0rem 0rem;
+  background-color: var(--color-text03);
+}
+
+/* ===== ===== ===== figcaption ===== ===== ===== */
+/* see layout.css "figcaption" for th and td styles*/
+
+/* ===== ===== ===== td, th ===== ===== ===== */
+/* see layout.css "table fonts" for th and td styles*/
+

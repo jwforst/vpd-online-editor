@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en" id="rootElement" class="font-family0 color-theme0">
+
+<!-- {{> head }} -->
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- responsive meta tag -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ViewportDoc CSS -->
+  <link rel="stylesheet" type="text/css" href="assets/css/project.css" />
+
+  <title>src-vpd-editor-base.html</title>
+</head>
+
+<!-- body -->
+
+<body class="body body--grid">
+
+  <!-- {{> header }} -->
+  <header class="header" id="header">
+    <h1 class="header__title">meta_title</h1>
+  </header>
+
+  <!-- {{> toolbar }} -->
+  <div class="toolbar toolbar--grid" id="toolbar">
+    <!-- system controls -->
+    <div class="toolbar__btn-group toolbar__btn-group--system" id="system">
+      <!-- table of contents -->
+      <button class="toolbar__btn" onclick="asideZ3BtnClick()" id="asideZ3Btn">
+        <img src="./assets/icons/icon-menu-24px-vpd.svg" title="Table of Contents" />
+      </button>
+
+      <!-- doc information -->
+      <button class="toolbar__btn" onclick="asideZ2BtnClick()" id="asideZ2Btn">
+        <img src="./assets/icons/icon-info-24px-vpd.svg" title="Document Info" />
+      </button>
+
+      <!-- content structure templates -->
+      <button class="toolbar__btn" onclick="asideZ1BtnClick()" id="asideZ1Btn">
+        <img src="./assets/icons/icon-structure-24px-vpd.svg"
+          title="Content Structure Templates" />
+      </button>
+
+      <!-- font family and color theme -->
+      <button class="toolbar__btn" onclick="asideZ0BtnClick()" id="asideZ0Btn">
+        <img src="./assets/icons/icon-settings-24px-vpd.svg" title="Fonts and Colors" />
+      </button>
+    </div>
+
+    <!-- editor controls -->
+    <div class="toolbar__btn-group toolbar__btn-group--editor" id="editorBtns">
+      <button class="toolbar__btn" data-action="toggleSection" data-args="h1">
+        <img src="./assets/icons/icon-H1-24px-vpd.svg" title="Heading 1" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="h2">
+        <img src="./assets/icons/icon-H2-24px-vpd.svg" title="Heading 2" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="h3">
+        <img src="./assets/icons/icon-H3-24px-vpd.svg" title="Heading 3" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="h4">
+        <img src="./assets/icons/icon-H4-24px-vpd.svg" title="Heading 4" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="h5">
+        <img src="./assets/icons/icon-H5-24px-vpd.svg" title="Heading 5" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="h6">
+        <img src="./assets/icons/icon-H6-24px-vpd.svg" title="Heading 6" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="hI">
+        <img src="./assets/icons/icon-H-inline-24px-vpd.svg" title="Heading Inline" />
+      </button>
+
+      <button class="toolbar__btn" data-action="setAttribute"
+        data-args="text-align, center">
+        <img src="./assets/icons/icon-title-24px-vpd.svg" title="Title Centered" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleMarkup" data-args="I">
+        <img src="./assets/icons/icon-I-emphasis-24px-vpd.svg" title="Emphasis" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleMarkup" data-args="B">
+        <img src="./assets/icons/icon-B-strong-24px-vpd.svg" title="Strong" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleMarkup" data-args="L">
+        <img src="./assets/icons/icon-link-24px-vpd.svg" title="Hyperlink" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="Tb">
+        <img src="./assets/icons/icon-table-24px-vpd.svg" title="Table" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="cB">
+        <img src="./assets/icons/icon-code-block-24px-vpd.svg" title="codeBlock" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="h1">
+        <img src="./assets/icons/icon-code-inline-24px-vpd.svg" title="code Inline" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="attachFile">
+        <img src="./assets/icons/icon-attach-file-24px-vpd.svg" title="attach File" />
+      </button>
+
+      <button class="toolbar__btn" data-action="insertCard" data-args="kitten">
+        <img src="./assets/icons/icon-image-24px-vpd.svg" title="kitten" />
+      </button>
+
+      <button class="toolbar__btn" data-action="togglemarkup" data-args="dT">
+        <img src="./assets/icons/icon-time-date-24px-vpd.svg" title="Date and Time" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="ul">
+        <img src="./assets/icons/icon-UL-24px-vpd.svg" title="Unordered List" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="oL">
+        <img src="./assets/icons/icon-OL-24px-vpd.svg" title="Ordered List" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="cL">
+        <img src="./assets/icons/icon-check-list-24px-vpd.svg" title="Check List" />
+      </button>
+
+      <button class="toolbar__btn" data-action="toggleSection" data-args="bQ">
+        <img src="./assets/icons/icon-block-quote-24px-vpd.svg" title="Block Quote" />
+      </button>
+    </div>
+    <!-- end editor controls -->
+  </div>
+
+  <!-- {{> drawer-full }} -->
+  <div class="drawer">
+    <!-- {{> aside-z3 }} -->
+    <aside class="drawer__aside drawer__aside--z3" id="asideZ3">
+      <!--  toc card -->
+      <section class="card-aside" id="">
+        <h1 class="card-aside__heading">Table of Contents</h1>
+        <p class="toc-1">
+          <a href="#overview">This is toc1 Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-2">
+          <a href="#overview">This is toc2 Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-3">
+          <a href="#overview">This is toc3 Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-1">
+          <a href="#overview">This is toc1 Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-2">
+          <a href="#overview">This is toc2Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-3">
+          <a href="#overview">This is toc3Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-1">
+          <a href="#overview">This is toc1 Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-2">
+          <a href="#overview">This is toc2 Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-3">
+          <a href="#overview">This is toc3 Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-1">
+          <a href="#overview">This is toc1 Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-2">
+          <a href="#overview">This is toc2 Lorem ipsum dolor sit amet</a>
+        </p>
+        <p class="toc-3">
+          <a href="#overview">This is toc3 Lorem ipsum dolor sit amet</a>
+        </p>
+      </section>
+
+      <!-- end toc card -->
+    </aside>
+
+    <!-- {{> aside-z2 }} -->
+    <aside class="drawer__aside drawer__aside--z2" id="asideZ2">
+      <!-- About card -->
+      <section class="card-aside" id="">
+        <h1 class="card-aside__heading">Document Information</h1>
+
+        <label for="docTitle" class="card-aside__text" id="">Title:</label>
+        <input type="text" id="docTitle" name="docTitle" />
+
+        <label for="docTitle" class="card-aside__text" id="">Author:</label>
+        <input type="text" id="docTitle" name="docTitle" />
+      </section>
+
+      <section class="card-aside" id="">
+        <h1 class="card-aside__heading">ViewportDoc Editor</h1>
+        <p class="" id="">Created by:</p>
+        <img class="footer__logo"
+          src="assets/images/journey-viewportdocs-logo-home.svg" alt="logo" />
+        <p class="" id="">Copyright © 2021 Journey ViewportDocs</p>
+        </p>
+        <p class="" id="">www.viewportdocs.com</p>
+      </section>
+      <!-- end about card -->
+    </aside>
+
+    <!-- {{> aside-z1 }} -->
+    <aside class="drawer__aside drawer__aside--z1" id="asideZ1">
+      <!-- content templates -->
+      <section class="card-aside" id="">
+        <h1 class="card-aside__heading">Content Templates</h1>
+
+        <label class="card-aside__text" for="structure0">
+          <input class="" type="radio" name="structureCollection" id="contentStructure0"
+            value="structure0" onchange="structureCollectionClicked(0)" />
+          Blank
+        </label>
+
+        <label class="card-aside__text" for="structure1">
+          <input class="" type="radio" name="structureCollection" id="contentStructure1"
+            value="structure1" onchange="structureCollectionClicked(1)" />
+          Paragraph and Character Styles
+        </label>
+
+        <label class="card-aside__text" for="structure2">
+          <input class="" type="radio" name="structureCollection" id="contentStructure2"
+            value="structure2" onchange="structureCollectionClicked(2)" />
+          Manufacturing Instructions
+        </label>
+
+        <label class="card-aside__text" for="structure3">
+          <input class="" type="radio" name="structureCollection" id="contentStructure3"
+            value="structure3" onchange="structureCollectionClicked(3)" />
+          Maintenance Instructions
+        </label>
+
+        <label class="card-aside__text" for="structure4">
+          <input class="" type="radio" name="structureCollection" id="contentStructure4"
+            value="structure4" onchange="structureCollectionClicked(4)" />
+          Software Tutorial
+        </label>
+
+        <label class="card-aside__text" for="structure5">
+          <input class="" type="radio" name="structureCollection" id="contentStructure5"
+            value="structure5" onchange="structureCollectionClicked(5)" />
+          User Guide
+        </label>
+
+        <label class="card-aside__text" for="structure6">
+          <input class="" type="radio" name="structureCollection" id="contentStructure6"
+            value="structure6" onchange="structureCollectionClicked(6)" />
+          Application Note
+        </label>
+      </section>
+      <!-- end content templates -->
+
+      <!-- help -->
+      <section class="card-aside" id="">
+        <h1 class="card-aside__heading">Help</h1>
+
+        <label class="card-aside__text" for="structure0">
+          <input class="" type="radio" name="structureCollection" id="contentStructure0"
+            value="structure0" onchange="structureCollectionClicked(0)" />
+          Getting Started
+        </label>
+
+        <label class="card-aside__text" for="structure1">
+          <input class="" type="radio" name="structureCollection" id="contentStructure1"
+            value="structure1" onchange="structureCollectionClicked(1)" />
+          Tutorials
+        </label>
+
+        <label class="card-aside__text" for="structure2">
+          <input class="" type="radio" name="structureCollection" id="contentStructure2"
+            value="structure2" onchange="structureCollectionClicked(2)" />
+          TBA1
+        </label>
+
+        <label class="card-aside__text" for="structure3">
+          <input class="" type="radio" name="structureCollection" id="contentStructure3"
+            value="structure3" onchange="structureCollectionClicked(3)" />
+          TBA2
+        </label>
+
+        <label class="card-aside__text" for="structure4">
+          <input class="" type="radio" name="structureCollection" id="contentStructure4"
+            value="structure4" onchange="structureCollectionClicked(4)" />
+          TBA3
+        </label>
+
+        <label class="card-aside__text" for="structure5">
+          <input class="" type="radio" name="structureCollection" id="contentStructure5"
+            value="structure5" onchange="structureCollectionClicked(5)" />
+          TBA4
+        </label>
+
+        <label class="card-aside__text" for="structure6">
+          <input class="" type="radio" name="structureCollection" id="contentStructure6"
+            value="structure6" onchange="structureCollectionClicked(6)" />
+          TBA5
+        </label>
+      </section>
+      <!-- end help -->
+    </aside>
+
+    <!-- {{> aside-z0 }} -->
+    <aside class="drawer__aside drawer__aside--z0" id="asideZ0">
+      <!-- font family card -->
+      <section class="card-aside" id="">
+        <h1 class="card-aside__heading">Font Family</h1>
+        <label class="card-aside__text" for="fontFamily0">
+          <input class="" type="radio" name="fontCollection" id="fontFamily0"
+            value="fontFamily0" onchange="fontFamilyClicked(0)" />
+          Open Sans/Open Sans
+        </label>
+        <label class="card-aside__text" for="fontFamily0">
+          <input class="" type="radio" name="fontCollection" id="fontFamily1"
+            value="fontFamily1" onchange="fontFamilyClicked(1)" />
+          Michroma/Raleway
+        </label>
+        <label class="card-aside__text" for="fontFamily0">
+          <input class="" type="radio" name="fontCollection" id="fontFamily2"
+            value="fontFamily2" onchange="fontFamilyClicked(2)" />
+          Libre Baskerville/Roboto
+        </label>
+        <label class="card-aside__text" for="fontFamily0">
+          <input class="" type="radio" name="fontCollection" id="fontFamily3"
+            value="fontFamily3" onchange="fontFamilyClicked(3)" />
+          Philosopher/Libre Franklin
+        </label>
+      </section>
+      <!-- end font family card -->
+
+      <!--color theme card -->
+      <section class="card-aside" id="">
+        <h1 class="card-aside__heading">Color Theme</h1>
+
+        <label class="card-aside__text" for="theme0">
+          <input class="" type="radio" name="themeCollection" id="colorTheme0"
+            value="colorTheme0" onchange="colorThemeClicked(0)" />
+          Sunny Gray
+        </label>
+
+        <label class="card-aside__text" for="theme1">
+          <input class="" type="radio" name="themeCollection" id="colorTheme1"
+            value="colorTheme1" onchange="colorThemeClicked(1)" />
+          Stormy Gray
+        </label>
+
+        <label class="card-aside__text" for="theme2">
+          <input class="" type="radio" name="themeCollection" id="colorTheme2"
+            value="colorTheme2" onchange="colorThemeClicked(2)" />
+          Thunderhead
+        </label>
+
+        <label class="card-aside__text" for="theme3">
+          <input class="" type="radio" name="themeCollection" id="colorTheme3"
+            value="colorTheme3" onchange="colorThemeClicked(3)" />
+          Spruce
+        </label>
+
+        <label class="card-aside__text" for="theme4">
+          <input class="" type="radio" name="themeCollection" id="colorTheme4"
+            value="colorTheme4" onchange="colorThemeClicked(4)" />
+          Bristlecone
+        </label>
+
+        <label class="card-aside__text" for="theme5">
+          <input class="" type="radio" name="themeCollection" id="colorTheme5"
+            value="colorTheme5" onchange="colorThemeClicked(5)" />
+          Red Tide
+        </label>
+
+        <label class="card-aside__text" for="theme6">
+          <input class="" type="radio" name="themeCollection" id="colorTheme6"
+            value="colorTheme6" onchange="colorThemeClicked(6)" />
+          Bat Cave
+        </label>
+
+        <label class="card-aside__text" for="theme7">
+          <input class="" type="radio" name="themeCollection" id="colorTheme7"
+            value="colorTheme7" onchange="colorThemeClicked(7)" />
+          Radium
+        </label>
+
+        <label class="card-aside__text" for="theme8">
+          <input class="" type="radio" name="themeCollection" id="colorTheme8"
+            value="colorTheme8" onchange="colorThemeClicked(8)" />
+          Manilla
+        </label>
+      </section>
+      <!-- end color theme card -->
+    </aside>
+
+    <!-- ==== ==== ==== ==== main ==== ==== ==== ==== -->
+    <main class="drawer__main" id="">
+
+      <!-- {{{body}}} -->
+
+    </main>
+
+  </div>
+
+  <!-- {{> footer }} -->
+  <div class="footer footer--grid" id="footer">
+    <!-- NOTE: copyright symbol = &copy;  -->
+    <div class="footer__text-group" id="text-group">
+      <p class="footer__text">
+        Copyright © 2021 Journey ViewportDocs
+      </p>
+    </div>
+    <div class="footer__logo-group" id="logo-group">
+      <img class="footer__logo" src="assets/images/journey-viewportdocs-logo-footer.svg"
+        alt="logo" />
+    </div>
+  </div>
+
+  <!-- {{> scripts }} -->
+  <script src="assets/js/projectControl.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+{
+    "name": "vpd-editor-base-template",
+    "description": "ViewportDocs editor base template used with ",
+    "version": "0.3.0",
+    "engines": {
+      "ghost": ">=4.0.0",
+      "ghost-api": "v4"
+    },
+    "license": "MIT",
+    "author": {
+      "name": "James Forst",
+      "email": "walley.forst@viewportdocs.com"
+    },
+    "server": {
+      "host": "127.0.0.1",
+      "port": "2370"
+    },
+    "scripts": {
+        "dev": "gulp",
+        "zip": "gulp zip",
+        "test": "gscan .",
+        "test:ci": "gscan --fatal --verbose .",
+        "pretest": "gulp build",
+        "preship": "yarn test",
+        "ship": "STATUS=$(git status --porcelain); echo $STATUS; if [ -z \"$STATUS\" ]; then yarn version && git push --follow-tags; fi"
+    },
+    "keywords": [
+        "viewportdocs",
+        "base template",
+        "viewportdocs-theme"
+    ],
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/jwforst/vpd-editor-base-template.git"
+    },
+    "config": {
+        "posts_per_page": 10,
+        "image_sizes": {}
+    }
+}

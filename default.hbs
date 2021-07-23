@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{@site.locale}}" id="rootElement" class="font-family0 color-theme0">
+
+{{> head}}
+
+<!-- body -->
+<body class="body body--grid">
+  
+  <header class="header" id="header">
+    <h1 class="header__title" >{{@site.title}}</h1>
+  </header>
+
+  <!-- toolbar block -->
+{{> toolbar}}
+
+  <!-- drawer block -->
+  <div class="drawer">
+    {{> aside-z3}}
+  
+    {{> aside-z2}}
+  
+    {{> aside-z1}}
+  
+    {{> aside-z0}}
+  
+    <!-- main -->
+    <main class="drawer__main b2 d r" id="">
+      
+      {{{body}}}
+  
+    </main>
+  
+  </div>
+
+
+  <!-- footer block -->
+  {{> footer}}
+  
+  <!-- ViewportDoc JavaScript -->
+  {{> scripts}}
+</body>
+
+</html>

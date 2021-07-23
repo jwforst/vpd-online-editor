@@ -1,0 +1,64 @@
+/* These are development styles for creating borders around display areas that are associated with an element. Use these to temporarily highlight the element container area during development. */
+
+/* Example: <div class="b4 d r"> creates a border, 4px wide, dashes, red.*/
+/* Try these: b1 s g, b2 d b, b3 d k, b5 s m.  */
+
+/* border width class assignments */
+.b1 {
+  border-width: 1px;
+}
+
+.b2 {
+  border-width: 2px;
+}
+
+.b3 {
+  border-width: 3px;
+}
+
+.b4 {
+  border-width: 4px;
+}
+
+.b5 {
+  border-width: 5px;
+}
+
+/* border style class assignments */
+.d {
+  border-style: dashed;
+}
+
+.s {
+  border-style: solid;
+}
+
+/* border color class assignments (RGB and CMYK) */
+.r {
+  border-color: hsl(0, 100%, 50%);
+}
+
+.g {
+  border-color: hsl(120, 100%, 50%);
+}
+
+.b {
+  border-color: hsl(240, 100%, 50%);
+}
+
+.c {
+  border-color: hsl(180, 100%, 50%);
+}
+
+.m {
+  border-color: hsl(300, 100%, 50%);
+}
+
+.y {
+  border-color: hsl(60, 100%, 50%);
+}
+
+.k {
+  border-color: hsl(0, 0%, 10%);
+}
+

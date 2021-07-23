@@ -1,0 +1,115 @@
+<!-- {{> toolbar }} -->
+<div class="toolbar toolbar--grid" id="toolbar">
+  <!-- system controls -->
+  <div class="toolbar__btn-group toolbar__btn-group--system" id="system">
+    <!-- table of contents -->
+    <button class="toolbar__btn" onclick="asideZ3BtnClick()" id="asideZ3Btn">
+      <img src="./assets/icons/icon-menu-24px-vpd.svg" title="Table of Contents" />
+    </button>
+
+    <!-- doc information -->
+    <button class="toolbar__btn" onclick="asideZ2BtnClick()" id="asideZ2Btn">
+      <img src="./assets/icons/icon-info-24px-vpd.svg" title="Document Info" />
+    </button>
+
+    <!-- content structure templates -->
+    <button class="toolbar__btn" onclick="asideZ1BtnClick()" id="asideZ1Btn">
+      <img src="./assets/icons/icon-structure-24px-vpd.svg"
+        title="Content Structure Templates" />
+    </button>
+
+    <!-- font family and color theme -->
+    <button class="toolbar__btn" onclick="asideZ0BtnClick()" id="asideZ0Btn">
+      <img src="./assets/icons/icon-settings-24px-vpd.svg" title="Fonts and Colors" />
+    </button>
+  </div>
+
+  <!-- editor controls -->
+  <div class="toolbar__btn-group toolbar__btn-group--editor" id="editorBtns">
+    <button class="toolbar__btn" data-action="toggleSection" data-args="h1">
+      <img src="./assets/icons/icon-H1-24px-vpd.svg" title="Heading 1" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="h2">
+      <img src="./assets/icons/icon-H2-24px-vpd.svg" title="Heading 2" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="h3">
+      <img src="./assets/icons/icon-H3-24px-vpd.svg" title="Heading 3" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="h4">
+      <img src="./assets/icons/icon-H4-24px-vpd.svg" title="Heading 4" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="h5">
+      <img src="./assets/icons/icon-H5-24px-vpd.svg" title="Heading 5" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="h6">
+      <img src="./assets/icons/icon-H6-24px-vpd.svg" title="Heading 6" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="hI">
+      <img src="./assets/icons/icon-H-inline-24px-vpd.svg" title="Heading Inline" />
+    </button>
+
+    <button class="toolbar__btn" data-action="setAttribute"
+      data-args="text-align, center">
+      <img src="./assets/icons/icon-title-24px-vpd.svg" title="Title Centered" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleMarkup" data-args="I">
+      <img src="./assets/icons/icon-I-emphasis-24px-vpd.svg" title="Emphasis" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleMarkup" data-args="B">
+      <img src="./assets/icons/icon-B-strong-24px-vpd.svg" title="Strong" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleMarkup" data-args="L">
+      <img src="./assets/icons/icon-link-24px-vpd.svg" title="Hyperlink" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="Tb">
+      <img src="./assets/icons/icon-table-24px-vpd.svg" title="Table" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="cB">
+      <img src="./assets/icons/icon-code-block-24px-vpd.svg" title="codeBlock" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="h1">
+      <img src="./assets/icons/icon-code-inline-24px-vpd.svg" title="code Inline" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="attachFile">
+      <img src="./assets/icons/icon-attach-file-24px-vpd.svg" title="attach File" />
+    </button>
+
+    <button class="toolbar__btn" data-action="insertCard" data-args="kitten">
+      <img src="./assets/icons/icon-image-24px-vpd.svg" title="kitten" />
+    </button>
+
+    <button class="toolbar__btn" data-action="togglemarkup" data-args="dT">
+      <img src="./assets/icons/icon-time-date-24px-vpd.svg" title="Date and Time" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="ul">
+      <img src="./assets/icons/icon-UL-24px-vpd.svg" title="Unordered List" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="oL">
+      <img src="./assets/icons/icon-OL-24px-vpd.svg" title="Ordered List" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="cL">
+      <img src="./assets/icons/icon-check-list-24px-vpd.svg" title="Check List" />
+    </button>
+
+    <button class="toolbar__btn" data-action="toggleSection" data-args="bQ">
+      <img src="./assets/icons/icon-block-quote-24px-vpd.svg" title="Block Quote" />
+    </button>
+  </div>
+  <!-- end editor controls -->
+</div>
